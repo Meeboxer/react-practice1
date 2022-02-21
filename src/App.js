@@ -25,10 +25,16 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const AddExpenseItem = (expense) => {
+    console.log(expense);
+    console.log("in app.js");
+  }
+
   return (
     <div className="App">
       <h1>Expense List</h1>
-      <NewExpense />
+      <NewExpense onAddExpense={AddExpenseItem}/>
       <Expenses item={expenses} />
     </div>
   );
