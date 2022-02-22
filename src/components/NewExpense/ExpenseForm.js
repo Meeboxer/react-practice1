@@ -20,7 +20,7 @@ const ExpenseForm = (props) => {
     const expenseData = {
       title: enterTitle,
       amount: enterAmount,
-      data: new Date(enterDate),
+      date: new Date(enterDate),
     };
     props.onSaveExpenseData(expenseData); //將expenseData傳入NewExpense傳來得onSaveExpenseData方法內
     setEnterTitle("");
