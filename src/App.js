@@ -29,12 +29,12 @@ function App() {
   const AddExpenseItem = (expense) => {
     console.log(expense);
     console.log("in app.js");
-  }
+  };
 
   return (
     <div className="App">
       <h1>Expense List</h1>
-      <NewExpense onAddExpense={AddExpenseItem}/>
+      <NewExpense onAddExpense={AddExpenseItem} />
       <Expenses item={expenses} />
     </div>
   );
