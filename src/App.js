@@ -29,9 +29,8 @@ function App() {
   const [expense, setExpense] = useState(Dummy_data);
   const AddExpenseItem = (newExpense) => {
     setExpense((preExpense) => {
-      return [newExpense, ...preExpense];
+      return [...preExpense,newExpense];
     });
-    // console.log(newExpense);
   };
 
   
